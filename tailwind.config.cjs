@@ -33,10 +33,10 @@ module.exports = {
         body: ["Montserrat", "sans-serif"],
       },
       content: {
-        evolvetext: "url('./assets/images/pictures/EvolveText.png')",
-        abstractwaves: "url('./assets/images/pictures/AbstractWaves.png')",
-        sparkles: "url('./assets/images/pictures/Sparkles.png')",
-        circles: "url('./assets/images/pictures/Circles.png')",
+        tdfitness: "url('./assets/image/pictures/tdfitness.png')",
+        abstractwaves: "url('./assets/image/pictures/AbstractWaves.png')",
+        sparkles: "url('./assets/image/pictures/Sparkles.png')",
+        circles: "url('./assets/image/pictures/Circles.png')",
       },
     },
     screens: {

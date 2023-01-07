@@ -23,7 +23,7 @@ function App() {
   return (
     <div className="app bg-gray-20">
       <Navbar currentPage={currentPage} handleSetPage={handleSetPage} />
-      <Hero currentPage={currentPage} />
+      <Hero currentPage={currentPage} handleSetPage={handleSetPage} />
       <Beneficts currentPage={currentPage} />
       <Classes currentPage={currentPage} />
       <About currentPage={currentPage} />

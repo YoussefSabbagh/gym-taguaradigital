@@ -18,7 +18,7 @@ const Navbar = ({ currentPage, handleSetPage }: Props) => {
   };
 
   return (
-    <header className="flexB text-myWhite fixed top-0 z-10 h-[80px] w-full bg-gray-200 py-0 px-8 md:px-20 ">
+    <header className="flexB fixed top-0 z-10 h-[80px] w-full bg-primary-100 py-0 px-8 md:px-20 ">
       <div className="flexB w-full">
         <div className="w-[80px]">
           <AnchorLink href={`#${Pages.Home}`}>
