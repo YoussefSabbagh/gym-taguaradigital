@@ -65,7 +65,7 @@ const Navbar = ({ currentPage, handleSetPage }: Props) => {
                 />
               </li>
 
-              {/* <li
+              <li
                 className="mt-8 text-center text-3xl md:mt-0 md:text-base "
                 onClick={handleShowToggleMenu}
               >
@@ -74,7 +74,7 @@ const Navbar = ({ currentPage, handleSetPage }: Props) => {
                   currentPage={currentPage}
                   handleSetPage={handleSetPage}
                 />
-              </li> */}
+              </li>
 
               <li
                 className="mt-8 text-center text-3xl md:mt-0 md:text-base "

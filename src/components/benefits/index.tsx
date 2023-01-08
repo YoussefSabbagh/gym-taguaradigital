@@ -1,9 +1,9 @@
+import { motion } from "framer-motion";
 import { BenefitType, Pages } from "../../types.d";
 import ActionButton from "../shares/ActionButton";
 import TitleText from "../shares/TitleText";
 import { HiHomeModern, HiUserGroup, HiAcademicCap } from "react-icons/hi2";
 
-import { motion } from "framer-motion";
 import BenefitsPageGraphic from "../../assets/image/pictures/BenefitsPageGraphic.png";
 import Benefit from "./Benefit";
 

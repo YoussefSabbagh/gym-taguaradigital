@@ -13,6 +13,7 @@ module.exports = {
         "primary-500": "#FF6B66",
         "secondary-400": "#FFCD5B",
         "secondary-500": "#FFC132",
+        primary: "#FFE600",
       },
       // backgroundImage: {
       //   contact: "url('assets/image/bgs/1.jpg')",
@@ -29,8 +30,8 @@ module.exports = {
           "url('./assets/images/pictures/HomePageIlustration.png')",
       }),
       fontFamily: {
-        title: ["DM Serif", "sans-serif"],
-        body: ["Montserrat", "sans-serif"],
+        title: ["Merriweather Sans", "sans-serif"],
+        body: ["Merriweather Sans", "sans-serif"],
       },
       content: {
         tdfitness: "url('./assets/image/pictures/tdfitness.png')",

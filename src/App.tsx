@@ -6,6 +6,7 @@ import Contact from "./components/contact";
 import Footer from "./components/footer";
 import Hero from "./components/hero";
 import Navbar from "./components/navbar";
+import Sponsors from "./components/sponsor";
 
 import { Pages } from "./types.d";
 
@@ -26,8 +27,10 @@ function App() {
       <Navbar currentPage={currentPage} handleSetPage={handleSetPage} />
       <main className="app bg-gray-20">
         <Hero handleSetPage={handleSetPage} />
+        <Sponsors />
         <Benefits handleSetPage={handleSetPage} />
         <Classes handleSetPage={handleSetPage} />
+        <About handleSetPage={handleSetPage} />
         <Contact handleSetPage={handleSetPage} />
       </main>
       <Footer />
