@@ -7,8 +7,21 @@ export interface Sub {
 
 export enum Pages {
   Home = "inicio",
-  Beneficts = "beneficios",
+  Benefits = "beneficios",
   Classes = "clases",
   About = "nosotros",
   Contact = "contacto",
+}
+
+export interface BenefitType {
+  buttonText: string;
+  icon: JSX.Element;
+  title: string;
+  description: string;
+}
+
+export interface ClassType {
+  name: string;
+  description?: string;
+  image: string;
 }

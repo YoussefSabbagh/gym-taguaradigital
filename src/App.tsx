@@ -1,8 +1,9 @@
 import { useState } from "react";
 import About from "./components/about";
-import Beneficts from "./components/beneficts";
+import Benefits from "./components/benefits";
 import Classes from "./components/classes";
 import Contact from "./components/contact";
+import Footer from "./components/footer";
 import Hero from "./components/hero";
 import Navbar from "./components/navbar";
 
@@ -21,14 +22,16 @@ function App() {
     setCurrentPage(() => selectedPage);
   };
   return (
-    <div className="app bg-gray-20">
+    <>
       <Navbar currentPage={currentPage} handleSetPage={handleSetPage} />
-      <Hero currentPage={currentPage} handleSetPage={handleSetPage} />
-      <Beneficts currentPage={currentPage} />
-      <Classes currentPage={currentPage} />
-      <About currentPage={currentPage} />
-      <Contact currentPage={currentPage} />
-    </div>
+      <main className="app bg-gray-20">
+        <Hero handleSetPage={handleSetPage} />
+        <Benefits handleSetPage={handleSetPage} />
+        <Classes handleSetPage={handleSetPage} />
+        <Contact handleSetPage={handleSetPage} />
+      </main>
+      <Footer />
+    </>
   );
 }
 

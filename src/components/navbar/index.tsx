@@ -18,7 +18,7 @@ const Navbar = ({ currentPage, handleSetPage }: Props) => {
   };
 
   return (
-    <header className="flexB fixed top-0 z-10 h-[80px] w-full bg-primary-100 py-0 px-8 md:px-20 ">
+    <header className="flexB fixed top-0 z-20 h-[80px] w-full bg-primary-100 py-0 px-8 md:px-20 ">
       <div className="flexB w-full">
         <div className="w-[80px]">
           <AnchorLink href={`#${Pages.Home}`}>
@@ -48,7 +48,7 @@ const Navbar = ({ currentPage, handleSetPage }: Props) => {
                 onClick={handleShowToggleMenu}
               >
                 <Link
-                  selectedPage={Pages.Beneficts}
+                  selectedPage={Pages.Benefits}
                   currentPage={currentPage}
                   handleSetPage={handleSetPage}
                 />
@@ -65,7 +65,7 @@ const Navbar = ({ currentPage, handleSetPage }: Props) => {
                 />
               </li>
 
-              <li
+              {/* <li
                 className="mt-8 text-center text-3xl md:mt-0 md:text-base "
                 onClick={handleShowToggleMenu}
               >
@@ -74,7 +74,7 @@ const Navbar = ({ currentPage, handleSetPage }: Props) => {
                   currentPage={currentPage}
                   handleSetPage={handleSetPage}
                 />
-              </li>
+              </li> */}
 
               <li
                 className="mt-8 text-center text-3xl md:mt-0 md:text-base "

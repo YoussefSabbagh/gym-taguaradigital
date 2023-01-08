@@ -4,18 +4,21 @@ import { Pages } from "../../types.d";
 import ActionButton from "../shares/ActionButton";
 import HomePageText from "../../assets/image/pictures/HomePageText.png";
 import HomePageGraphic from "../../assets/image/pictures/HomePageIlustration.png";
-import SponsorRedBull from "../../assets/image/pictures/SponsorRedBull.png";
-import SponsorForbes from "../../assets/image/pictures/SponsorForbes.png";
-import SponsorFortune from "../../assets/image/pictures/SponsorFortune.png";
+import SponsorRedBull from "../../assets/image/logos/SponsorRedBull.png";
+import SponsorForbes from "../../assets/image/logos/SponsorForbes.png";
+import SponsorFortune from "../../assets/image/logos/SponsorFortune.png";
+import SponsorTaguara from "../../assets/image/logos/td-trans.png";
 
 interface Props {
-  currentPage: Pages;
   handleSetPage: (value: Pages) => void;
 }
 
-const Hero = ({ currentPage, handleSetPage }: Props) => {
+const Hero = ({ handleSetPage }: Props) => {
   return (
-    <section id="home" className="gap-16 bg-gray-20 py-10 md:h-full md:pb-0">
+    <section
+      id={Pages.Home}
+      className="gap-16 bg-gray-20 py-10 md:h-full md:pb-0"
+    >
       {/* IMAGE AND MAIN HEADER */}
       <motion.div
         className="mx-auto w-5/6 items-center justify-center md:flex md:h-5/6"
@@ -43,9 +46,9 @@ const Hero = ({ currentPage, handleSetPage }: Props) => {
 
             <p className="tooltip mt-8 text-sm">
               <span className="tooltiptext">
-                Taguara Digital Fitness te desarrolla tu pagina web a la medida
-                para tu Gym. Esta es un modelo para que veas lo que podemos
-                hacer por ti.
+                <span className="text-xl">Taguara Digital</span> te desarrolla
+                tu pagina web a la medida para tu Gym. Esta es un modelo para
+                que veas lo que podemos hacer por ti.
               </span>
               Unparalleled Training Fitness Classes. World Class Studios to get
               the Body Shapes That you Dream of.. Get Your Dream Body Now.
@@ -77,9 +80,11 @@ const Hero = ({ currentPage, handleSetPage }: Props) => {
 
         {/* IMAGE */}
         <div
-          className="flex basis-3/5 justify-center md:z-10
+          className="relative flex basis-3/5 justify-center md:z-10
               md:ml-40 md:mt-16 md:justify-items-end"
         >
+          <div className="hidden before:absolute before:top-20 before:left-20 before:content-sparkles md:block"></div>
+
           <img alt="home-pageGraphic" src={HomePageGraphic} />
         </div>
       </motion.div>
@@ -87,10 +92,15 @@ const Hero = ({ currentPage, handleSetPage }: Props) => {
       {/* SPONSORS */}
       <div className="hidden h-[150px] w-full bg-primary-100 py-10 md:block">
         <div className="mx-auto w-5/6">
-          <div className="flex w-3/5 items-center justify-between gap-8">
+          <div className="flex w-full items-center justify-between gap-8">
             <img alt="redbull-sponsor" src={SponsorRedBull} />
             <img alt="forbes-sponsor" src={SponsorForbes} />
             <img alt="fortune-sponsor" src={SponsorFortune} />
+            <img
+              alt="Taguara Digital sponsor"
+              src={SponsorTaguara}
+              className="w-24"
+            />
           </div>
         </div>
       </div>
