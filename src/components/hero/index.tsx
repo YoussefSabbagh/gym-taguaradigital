@@ -3,8 +3,7 @@ import { motion } from "framer-motion";
 import { Pages } from "../../types.d";
 import ActionButton from "../shares/ActionButton";
 import HomePageText from "../../assets/image/pictures/HomePageText.png";
-import HomePageGraphic from "../../assets/image/pictures/HomePageIlustration.png";
-import Sponsors from "../sponsor";
+import HomePageGraphic from "../../assets/image/pictures/hero0.png";
 
 interface Props {
   handleSetPage: (value: Pages) => void;
@@ -12,10 +11,7 @@ interface Props {
 
 const Hero = ({ handleSetPage }: Props) => {
   return (
-    <section
-      id={Pages.Home}
-      className="gap-16 bg-gray-20 py-10 md:h-full md:pb-0"
-    >
+    <section id={Pages.Home} className="gap-16 py-10 md:h-full md:pb-0">
       {/* IMAGE AND MAIN HEADER */}
       <motion.div
         className="mx-auto w-5/6 items-center justify-center md:flex md:h-5/6"
@@ -66,7 +62,7 @@ const Hero = ({ handleSetPage }: Props) => {
           >
             <ActionButton handleSetPage={handleSetPage}>Únete ya</ActionButton>
             <AnchorLink
-              className="text-sm font-bold text-primary-500 underline hover:text-secondary-500"
+              className="text-sm font-bold text-myBlack underline hover:text-myPurple"
               onClick={() => handleSetPage(Pages.Contact)}
               href={`#${Pages.Contact}`}
             >
@@ -77,11 +73,10 @@ const Hero = ({ handleSetPage }: Props) => {
 
         {/* IMAGE */}
         <div
-          className="relative flex basis-3/5 justify-center md:z-10
+          className="relative z-10 flex basis-3/5 justify-center
               md:ml-40 md:mt-16 md:justify-items-end"
         >
-          <div className="hidden before:absolute before:top-20 before:left-20 before:content-sparkles md:block"></div>
-
+          <div className="hidden before:absolute before:top-0 before:left-0 before:content-sparkles md:block "></div>
           <img alt="home-pageGraphic" src={HomePageGraphic} />
         </div>
       </motion.div>

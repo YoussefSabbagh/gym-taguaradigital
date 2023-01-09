@@ -33,7 +33,7 @@ const About = ({ handleSetPage }: Props) => {
         </motion.div>
       </div>
       <div className="relative">
-        <div className="absolute top-0 left-0 hidden h-full w-4/5 rounded-tr-[200px] bg-primary/10 md:block"></div>
+        <div className="absolute top-0 left-0 hidden h-full w-4/5 rounded-tr-[200px] bg-myYellow-100 md:block"></div>
         <div className="relative mx-auto grid w-5/6 grid-cols-1 gap-12 md:grid-cols-2">
           <div className="relative h-full">
             <div className="relative">
@@ -75,9 +75,9 @@ const About = ({ handleSetPage }: Props) => {
             <div className="relative mt-20 w-full md:w-2/3">
               <TitleText>¿Que hacemos ?</TitleText>
               <p className="mt-5 mb-10 text-sm">
-                We provide world class fitness equipment, trainers and classes
-                to get you to your ultimate fitness goals with ease. We provide
-                true care into each and every member.
+                We are distinguished by our unsurpassed motivating atmosphere,
+                knowledgeable staff, and premier exercise equipment, which
+                supports our members in meeting their individual fitness goals.
               </p>
             </div>
             <img

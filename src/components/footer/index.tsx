@@ -21,9 +21,9 @@ const Footer = () => {
 
         <div className="flexB basis-1/3 flex-col justify-center gap-4 text-4xl">
           <h2>Siguenos </h2>
-          <div className="flexB w-full justify-center space-x-4 text-primary-500 ">
+          <div className="flexB w-full justify-center space-x-4">
             <a
-              className="text-primary-500 hover:scale-95 hover:text-secondary-500"
+              className="text-myYellow-500 hover:scale-95 hover:text-myPurple"
               href="https://www.linkedin.com/in/youssef-sabbagh/"
               target="_blank"
               rel="noreferrer"
@@ -31,7 +31,7 @@ const Footer = () => {
               <FaLinkedin />
             </a>
             <a
-              className="text-primary-500 hover:scale-95 hover:text-secondary-500"
+              className="text-myYellow-500 hover:scale-95 hover:text-myPurple"
               href="https://github.com/YoussefSabbagh"
               target="_blank"
               rel="noreferrer"
@@ -39,7 +39,7 @@ const Footer = () => {
               <FaGithub />
             </a>
             <a
-              className="text-primary-500 hover:scale-95 hover:text-secondary-500"
+              className="text-myYellow-500 hover:scale-95 hover:text-myPurple"
               href="https://twitter.com/TaguaraDigital"
               target="_blank"
               rel="noreferrer"
@@ -50,7 +50,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <p className="text-center font-title text-xs">
+      <p className="text-center font-title text-xs font-semibold">
         Taguara Digital © Copyright 2023. All Rights Reserved
       </p>
     </footer>

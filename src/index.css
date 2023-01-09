@@ -6,16 +6,16 @@
 @layer base {
   html,
   body {
-    @apply h-full w-full font-body text-gray-500;
+    @apply h-full w-full bg-myWhite font-body;
   }
 
   a {
-    @apply text-gray-500 hover:font-bold hover:text-primary-300;
+    @apply text-myBlack hover:font-bold hover:text-myPurple;
   }
 }
 @layer components {
   .app {
-    @apply h-full w-full font-body text-gray-500;
+    @apply h-full w-full text-myBlack;
   }
 
   .flexB {
@@ -27,7 +27,7 @@
   }
 
   .mobileMenu {
-    @apply absolute top-[80px] -left-full h-[calc(100vh-80px)] w-full  flex-col bg-primary-100 opacity-0;
+    @apply absolute top-[80px] -left-full h-[calc(100vh-80px)] w-full  flex-col bg-myYellow-100 opacity-0;
   }
   .desktopMenu {
     @apply relative top-0 h-auto flex-row space-x-4 opacity-100;
@@ -108,7 +108,7 @@
   }
 
   .tooltip .tooltiptext {
-    @apply invisible absolute bottom-full z-10 w-full rounded-lg bg-secondary-400 px-4 py-2 text-center text-gray-500 opacity-0 transition-opacity duration-500;
+    @apply invisible absolute bottom-full z-10 w-full rounded-lg bg-myYellow-300 px-4 py-2 text-center text-myBlack opacity-0 transition-opacity duration-500;
   }
 
   .tooltip:hover .tooltiptext {

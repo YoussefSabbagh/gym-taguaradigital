@@ -25,12 +25,12 @@ function App() {
   return (
     <>
       <Navbar currentPage={currentPage} handleSetPage={handleSetPage} />
-      <main className="app bg-gray-20">
+      <main className="app">
         <Hero handleSetPage={handleSetPage} />
         <Sponsors />
-        <Benefits handleSetPage={handleSetPage} />
-        <Classes handleSetPage={handleSetPage} />
         <About handleSetPage={handleSetPage} />
+        <Classes handleSetPage={handleSetPage} />
+        <Benefits handleSetPage={handleSetPage} />
         <Contact handleSetPage={handleSetPage} />
       </main>
       <Footer />

@@ -9,7 +9,7 @@ interface Props {
 const ActionButton = ({ children, handleSetPage }: Props) => {
   return (
     <AnchorLink
-      className="rounded-md bg-secondary-500 px-8 py-2 hover:bg-primary-500 hover:text-white"
+      className="rounded-md bg-myBlack px-8 py-2 text-myWhite hover:bg-myPurple hover:text-myWhite"
       onClick={() => handleSetPage(Pages.Contact)}
       href={`#${Pages.Contact}`}
     >

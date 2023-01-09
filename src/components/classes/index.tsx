@@ -50,7 +50,7 @@ interface Props {
 
 const Classes = ({ handleSetPage }: Props) => {
   return (
-    <section id={Pages.Classes} className="w-full bg-primary-100 py-40">
+    <section id={Pages.Classes} className="w-full bg-myYellow-100 py-40">
       <motion.div onViewportEnter={() => handleSetPage(Pages.Classes)}>
         <motion.div
           className="mx-auto w-5/6"

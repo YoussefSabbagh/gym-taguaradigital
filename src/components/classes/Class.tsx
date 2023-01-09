@@ -7,7 +7,7 @@ interface Props {
 const Class = ({ name, description, image }: Props) => {
   const overlayStyles = `p-5 absolute z-30 flex
   h-[calc(100%-15px)] w-full flex-col items-center justify-center
-  whitespace-normal bg-primary-500 text-center text-sm text-white
+  whitespace-normal bg-myPurple text-center text-sm text-myWhite
   opacity-0 transition duration-500 hover:opacity-90 font-title`;
 
   return (

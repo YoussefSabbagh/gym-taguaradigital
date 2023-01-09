@@ -6,7 +6,7 @@ import SponsorOctane from "../../assets/image/logos/SponsorOctane.png";
 
 const Sponsors = () => {
   return (
-    <section className="hidden h-[150px] w-full bg-primary-100 py-10 md:block">
+    <section className="hidden h-[150px] w-full bg-myYellow-100 py-10 md:block">
       <div className="mx-auto w-5/6">
         <div className="flex w-full items-center justify-between gap-8">
           <img alt="redbull-sponsor" src={SponsorRedBull} />

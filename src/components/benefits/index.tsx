@@ -10,21 +10,21 @@ import Benefit from "./Benefit";
 const benefits: Array<BenefitType> = [
   {
     buttonText: "Mas Información",
-    icon: <HiHomeModern className="h-10 w-10 text-primary-500" />,
+    icon: <HiHomeModern className="h-10 w-10 text-myPurple" />,
     title: "Las más modernas instalaciones",
     description:
       "Neque adipiscing amet amet enim. Feugiat dolor enim fermentum in a in lectus pellentesque. Ullamcorper et.",
   },
   {
     buttonText: "Conocer mas",
-    icon: <HiUserGroup className="h-10 w-10 text-primary-500" />,
+    icon: <HiUserGroup className="h-10 w-10 text-myPurple" />,
     title: "Mas de 100 diferentes clases",
     description:
       "Eu ipsum id egestas risus tempus enim semper felis quis. Nec consectetur ac venenatis facilisi est. Eget ac turpis id.",
   },
   {
     buttonText: "Leer Mas",
-    icon: <HiAcademicCap className="h-10 w-10 text-primary-500" />,
+    icon: <HiAcademicCap className="h-10 w-10 text-myPurple" />,
     title: "Trainers profesionales y expertos",
     description:
       "Fusce vestibulum aliquam ut cras. Nisl lectus egestas sapien nisl. Lacus at mi sit pellentesque. Congue parturient.",
@@ -112,7 +112,7 @@ const Benefits = ({ handleSetPage }: Props) => {
                 >
                   <TitleText>
                     MILLIONS OF HAPPY MEMBERS GETTING{" "}
-                    <span className="text-primary-500">FIT</span>
+                    <span className="text-myPurple">FIT</span>
                   </TitleText>
                 </motion.div>
               </div>

@@ -13,7 +13,7 @@ const Links = ({ currentPage, selectedPage, handleSetPage }: Props) => {
       href={`#${selectedPage}`}
       onClick={() => handleSetPage(selectedPage)}
       className={`${
-        currentPage === selectedPage ? "font-bold text-primary-500" : ""
+        currentPage === selectedPage ? "font-bold text-myPurple" : ""
       } transition duration-500 `}
     >
       {selectedPage}
